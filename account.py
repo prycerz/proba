@@ -50,7 +50,7 @@ class MojaAplikacja(App):
         file_chooser.path = '.'  # Ustawienie domyślnej ścieżki na bieżący katalog
         file_chooser.filters = ['*.jpg', '*.png', '*.jpeg']  # Filtry plików
         file_chooser.bind(on_submit=self.wybrano_zdjecie_profilowe)
-        popup = popup(title="Wybierz zdjęcie profilowe", content=file_chooser, size_hint=(None, None), size=(400, 400))
+        popup = popup(title="Wybierz zdjęcie profilowe!!!!!!!!!", content=file_chooser, size_hint=(None, None), size=(400, 400))
         popup.open()
 
     def wybrano_zdjecie_profilowe(self, instance, path, filename):
